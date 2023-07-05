@@ -1,0 +1,265 @@
+/*#############################################
+                    Body      source ("https://codepen.io/sato4yoshida/pen/DHouB")
+##############################################*/
+body{
+  color: rgba(0, 0, 0, 0.72);
+  background:
+    -moz-linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  background:
+  -webkit-linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  background:
+  -o-linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  background:
+  linear-gradient(
+    -72deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 27%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  background-repeat: no-repeat;
+}
+
+
+/*#############################################
+                    Header
+##############################################*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1 1 auto;
+    padding-bottom: 3%;
+    height: 10rem;
+    font-size: 1.5rem;
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ header div img{
+    margin-top: 17%;
+    margin-right: 3%;
+    float: left;
+    height: 5rem;
+    width: 5rem;
+ }
+
+ header div h1{
+    position: relative;
+ }
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 25vw;
+    height: 50px;
+    margin-top: 0.5%;
+}
+
+header ul li{
+    padding: 2%;
+    margin: 3%;
+}
+
+header a{
+    color:black;
+    text-decoration: none; 
+}
+
+header a:hover{
+    color: blue;
+}
+
+
+/*#############################################
+                    Main
+##############################################*/
+main{
+    color: black;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("./Images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    margin: 3% 7%;
+}
+
+.pet{
+    font-size: 4rem;
+    margin: 1%;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+    height: 70rem;
+    width: 55rem;
+    margin-left: 5%;
+}
+
+main div div{
+    display: flex;
+    flex-direction: column;
+    border: 0.1rem solid black;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 33rem;
+    padding: 2%;
+    margin: 2%;
+}
+
+main div div:last-child{
+    border: none;
+}
+
+main div div img{
+    height: 5rem;
+    width: 5rem;
+}
+
+main button{
+    background-color: rgb(240, 222, 222);
+    border: 0.1rem solid black;
+    border-radius: 5%;
+    width: 13rem;
+    font-size: 1.3rem;
+    height: 4rem;
+}
+/*##############################################################
+                        Social media icons
+##############################################################*/
+.social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+    width: 40px;
+    list-style-type: none;
+}
+.social li a {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+  }
+  
+  .social li a .icon {
+    position: relative;
+    color: #262626;
+    transition: .5s;
+    z-index: 3;
+  } 
+  
+  .social li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  .social li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  .social li a:hover:before {
+    top: 0;
+  }
+  
+  .social li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  .social li:nth-child(2) a:before{
+    background: #fc93f3;
+  }
+  
+  .social li:nth-child(3) a:before {
+    background: #0077b5;
+  }
+ 
+  /*##############################################################
+                        mock ups
+##############################################################*/
+#homepage, #login, #signup{
+    width: 30rem;
+    height: 60rem;
+}
+
+#d-home, #d-login, #d-signup{
+    width: 50rem;
+    height: 40rem;
+}

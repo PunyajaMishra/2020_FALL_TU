@@ -1,0 +1,24 @@
+body{
+    background-color: blue;
+    color: green;
+}
+h1{
+    font-size: 2rem;
+    color: red;
+    background-color: purple;
+}
+
+p{
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+div{
+    border: 1rem solid black; 
+    float: left;
+}
+
+a{
+    color: greenyellow;
+}
